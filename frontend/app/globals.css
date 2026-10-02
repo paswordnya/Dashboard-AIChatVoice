@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Tells the browser to render NATIVE form controls (select dropdowns,
+       number-input spinners, date pickers, autofill, scrollbars) with
+       dark chrome — without this, browsers default those to light/white
+       regardless of our own Tailwind classes, since they don't infer
+       dark mode from arbitrary page background colors. */
+    color-scheme: dark;
+  }
+}
+
+@layer utilities {
+  /* Dark-theme card — deliberately a big jump lighter than the page bg
+     (not just one shade up) so card boundaries stay visible; slate-900
+     was too close to the slate-950 page background to read as a
+     separate surface at all. */
+  .card {
+    @apply rounded-2xl border border-white/10 bg-slate-800/60 shadow-lg shadow-black/20;
+  }
+}
+
