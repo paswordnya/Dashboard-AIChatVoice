@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 An AI analytics & model observability dashboard for **pip Voice AI** — the
 voice assistant pipeline (Turn Manager, Fast Response Layer, AI Router,
 streaming STT→LLM→TTS) designed in
-`../PRD_TDD_pip_Voice_AI.md.pdf` ("PRD & TDD — pip Voice AI", v1.0,
+`../reference/prd/PRD_TDD_pip_Voice_AI.md.pdf` ("PRD & TDD — pip Voice AI", v1.0,
 14 Juli 2026). That PRD is still a design blueprint — its own roadmap
 (§18.3, M1–M6) has not been implemented yet, so this dashboard currently has
 no live system to read from. Build it against the request-metadata schema
